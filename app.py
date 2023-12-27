@@ -30,13 +30,13 @@ if st.button('Predict'):
     input_features = pd.DataFrame({
         'age': [age],
         'sex': [1.0 if sex == 'Male' else 0.0],  # Misalnya, 1 untuk Male dan 0 untuk Female
-        'cp' : [1.0 if cp == 'Typical Angina' else 2.0 if cp == 'Atypical Angina' else 3.0 if cp == 'Non-Anginal Pain' else 4.0]
-        'trestbps' : [trestbps]
-        'chol' : [chol]
-        'fbs' : [1.0 if fbs == 'Yes' else 0.0]
-        'restecg' : [0.0 if restecg == 'Normal' else 1.0 if restecg == 'ST-T Wave Abnormality' else 2.0]
-        'thalach' : [thalach]
-        'exang' : [1.0 if exang == 'Yes' else 0.0]
+        'cp' : [1.0 if cp == 'Typical Angina' else 2.0 if cp == 'Atypical Angina' else 3.0 if cp == 'Non-Anginal Pain' else 4.0],
+        'trestbps' : [trestbps],
+        'chol' : [chol],
+        'fbs' : [1.0 if fbs == 'Yes' else 0.0],
+        'restecg' : [0.0 if restecg == 'Normal' else 1.0 if restecg == 'ST-T Wave Abnormality' else 2.0],
+        'thalach' : [thalach],
+        'exang' : [1.0 if exang == 'Yes' else 0.0],
         'oldpeak' : [oldpeak]
     })
 
