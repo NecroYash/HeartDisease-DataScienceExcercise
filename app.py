@@ -3,7 +3,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-model = joblib.load('/content/saved_KNNmodel.sav')
+model = joblib.load('saved_KNNmodel.sav')
 
 def predict(input_features):
 
