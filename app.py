@@ -1,9 +1,9 @@
 
 import streamlit as st
-import joblib
+import pickle
 import pandas as pd
 
-model = joblib.load('saved_KNNmodel.sav')
+model = pickle.load(open('saved_KNNmodel.sav', 'rb'))
 
 def predict(input_features):
 
