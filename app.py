@@ -2,6 +2,7 @@
 import streamlit as st
 import joblib
 import pandas as pd
+import sklearn
 
 model = joblib.load('saved_KNNmodel.sav')
 
