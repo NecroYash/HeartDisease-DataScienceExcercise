@@ -92,15 +92,6 @@ with tab2:
 
     uploaded_result = pd.DataFrame({'Prediction Result': result_arr})
 
-    for i in range(70, 101):
-      status_text.text(f"{i}% complete")
-      bar.progress(i)
-      time.sleep(0.01)
-      if i == 100:
-        time.sleep(1)
-        status_text.empty()
-        bar.empty()
-
     col1, col2 = st.columns([1, 2])
 
     with col1:
