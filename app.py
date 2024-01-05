@@ -59,10 +59,11 @@ with tab2:
     
   file_path = "sample_heart_disease_parameteers.csv"  # Sesuaikan dengan nama file Anda
   df = pd.read_csv(file_path)
+  sample_csv = df.to_csv(index=False).encode('utf-8')
   st.header("Predict multiple data:")
 
   st.write("")
-  st.download_button("Download CSV Example", data=file_path, file_name='sample_heart_disease_parameters.csv', mime='text/csv')
+  st.download_button("Download CSV Example", data=sample_csv, file_name='sample_heart_disease_parameters.csv', mime='text/csv')
 
   st.write("")
   st.write("")
