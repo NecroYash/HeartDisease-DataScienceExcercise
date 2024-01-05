@@ -3,7 +3,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-model = joblib.load('/content/saved_KNNmodel.sav')
+model = joblib.load('saved_KNNmodel.sav')
 
 def predict(input_features):
 
@@ -60,7 +60,7 @@ with tab2:
   st.header("Predict multiple data:")
 
   st.write("")
-  st.download_button("Download CSV Example", data='/content/sample_heart_disease_parameters.csv', file_name='sample_heart_disease_parameters.csv', mime='text/csv')
+  st.download_button("Download CSV Example", data='sample_heart_disease_parameters.csv', file_name='sample_heart_disease_parameters.csv', mime='text/csv')
 
   st.write("")
   st.write("")
