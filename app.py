@@ -76,11 +76,6 @@ with tab2:
     bar = st.progress(0)
     status_text = st.empty()
 
-    for i in range(1, 70):
-      status_text.text(f"{i}% complete")
-      bar.progress(i)
-      time.sleep(0.01)
-
     result_arr = []
 
     for prediction in prediction_arr:
