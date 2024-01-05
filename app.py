@@ -56,11 +56,13 @@ with tab1:
       st.success(f'The prediction is: {prediction_label}')
 
 with tab2:
-
+    
+  file_path = "sample_heart_disease_parameteers.csv"  # Sesuaikan dengan nama file Anda
+  df = pd.read_csv(file_path)
   st.header("Predict multiple data:")
 
   st.write("")
-  st.download_button("Download CSV Example", data='sample_heart_disease_parameteers.csv', file_name='sample_heart_disease_parameters.csv', mime='text/csv')
+  st.download_button("Download CSV Example", data=file_path, file_name='sample_heart_disease_parameters.csv', mime='text/csv')
 
   st.write("")
   st.write("")
