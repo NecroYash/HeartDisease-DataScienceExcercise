@@ -60,7 +60,7 @@ with tab2:
   st.header("Predict multiple data:")
 
   st.write("")
-  st.download_button("Download CSV Example", data=sample_heart_disease_parameteers.csv, file_name='sample_heart_disease_parameters.csv', mime='text/csv')
+  st.download_button("Download CSV Example", data='sample_heart_disease_parameteers.csv', file_name='sample_heart_disease_parameters.csv', mime='text/csv')
 
   st.write("")
   st.write("")
